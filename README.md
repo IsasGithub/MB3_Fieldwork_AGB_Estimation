@@ -46,9 +46,9 @@ A common practice in remote sensing to estimate the AGB is using a Sentinel-2 (o
 For this buffered points we extract the mean NDVI from the newly created ndvi_raster, which we combine through a adding it as a new column with our ground truth AGB values from the `samples` data frame. Now we can plot the linear relationship in a scatterplot style between the ndvi values and AGB values.
 
 
-| <img src="https://github.com/lenajaeger9/DigitalImageAnalysis_FinalTask/blob/main/figures/glacier_mask2000.png" alt="Glacier mask 2000" width="400"/> | <img src="https://github.com/lenajaeger9/DigitalImageAnalysis_FinalTask/blob/main/figures/glacier_mask2019.png" alt="Glacier mask 2019" width="400"/> |
-| -- | --- |
-| Glacier mask 2000 | Glacier mask 2019 |
+| <img src="https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/scatterplot_sat.jpeg" alt="scatterplot_sat" width="250"/> | <img src="https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/scatterplot_dr1.jpeg" alt="scatterplot_dr1" width="250"/> |<img src="https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/scatterplot_dr2.jpeg" alt="scatterplot_dr2" width="250"/> |
+| -- | --- | --- |
+| Linear Relationship Sentinel | Linear Relationship Drone 1 | Linear Relationship Drone 2 |
 
 
 In this exercise we will investigate the relation of vegetation indices to above-ground biomass values over study area. We will perform multi-linear and random forest machine learning regression models in order to predict the AGB values based on vegetation indices as predictors.
