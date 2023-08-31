@@ -35,7 +35,7 @@ The observed fields belong to Demmin, a town in northern Germany (Western-Pomera
 * Those can then be imported to R studio.
 
 ### Preprocessing in R
-The following is performed for both satellite and drone imagery. You can find the commented scripts in this repository.
+The following is performed for both satellite and drone imagery. To keep the page clearer, no code snippets are included in the text. Nevertheless, the documented scripts can of course also be sourced from this repository.
 
 #### Load data
 In the beginning, the required data (aoi, samples with ground truth information and raster image) are imported into the script, and the raster is masked to the area of interest, our fields.
