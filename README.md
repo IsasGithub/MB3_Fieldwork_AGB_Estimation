@@ -58,6 +58,17 @@ Splitting the dataset into training and testing subsets helps ensure the model's
 
 We will now perform linear and random forest machine learning regression models in order to predict the AGB values based on the NDVI as a predictor.
 
+#### Linear model
+
+The linear model is created using the `lm()` function. It models the relationship between the target variable AGB and the predictor NDVI_mean using the training data. Predictions are made by using the `predict()` function on the model, providing the testing data as newdata. The results of the prediction are the estimated AGB values based on the linear model. We will then convert it into a data frame containing the columns: true_AGB (actual AGB values from the testing data), and estim_AGB (predicted AGB values from the linear regression model). 
+
+
+
+
+#### Random forest
+
+with 700 trees to grow
+
 
 ## Results
 
