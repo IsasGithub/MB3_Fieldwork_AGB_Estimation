@@ -89,7 +89,7 @@ This assumption should be substantiated by calculating different evaluation erro
 * Mean Squared Error (MSE): calculates the average of the squared differences between the predicted values and the true values.
 * Root Mean Squared Error (RMSE): is the square root of the MSE and provides a measure of the average magnitude of the errors.
 
-The following applies to all errors: Lower values of all errors indicate a better model performance. The lower the values, the more accurate the model's predictions are on average. The benchmark for considering the result good can be based on the range of your actual AGB values. 
+The following applies to all errors: Lower values of all errors indicate a better model performance. The lower the values, the more accurate the model's predictions are on average. The benchmark to consider a result good can be based on the range of the actual AGB values. 
 
 
 **Table 1:** Error metrics for linear and random forest model for Sentinel and drone images.
