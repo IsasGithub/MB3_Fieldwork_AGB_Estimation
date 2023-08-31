@@ -44,7 +44,7 @@ A common practice in remote sensing to estimate the AGB is using a Sentinel-2 (o
 
 #### Zonal statistics
 Each vegetation index band will be read as as an numerical raster array in order to perform later zonal statistics of selected pixels
-and we combine through a new column with our ground truth AGB values from the 'samples' data frame
+and we combine through a new column with our ground truth AGB values from the `samples` data frame
 
 In this exercise we will investigate the relation of vegetation indices to above-ground biomass values over study area. We will perform multi-linear and random forest machine learning regression models in order to predict the AGB values based on vegetation indices as predictors.
 
