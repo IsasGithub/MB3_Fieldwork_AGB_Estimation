@@ -70,18 +70,28 @@ The random forest model is created using the `randomForest()` function with 700 
 
 
 ### Visualisation
-The two data frames from both predictions will be combined into one. We generate a bar plot to visualise the comparison between true and the two estimated AGB values.
+The two data frames from both predictions will be combined into one. We generate a `geom_bar` plot to visualise the comparison between true and the two estimated AGB values.
 The resulting plot shows a comparison between them for different samples (represented by short names) in alphabetical order. **Figure 4** and **Figure 5** show that for both, Sentinel and drone image, the values for the predicted AGB with the linear model seem to be closer to the true AGB values. 
 
 ![agb_combined_sat](https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/agb_combined_sat.jpeg)
 
 ***Figure 4:** Visualisation of true and estimated AGB (Sentinel).* 
 
+
 ![agb_combined_drones](https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/agb_combined_drones.jpeg)
 
 ***Figure 5:** Visualisation of true and estimated AGB (drone).* 
 
-However, this presumption should be supported by... 
+
+This assumption should be substantiated by calculating different evaluation errors. There are three, which are commonly used. 
+* The Mean Absolute Error (MAE): measures the average absolute difference between the predicted values and the true values gives an idea of the average magnitude of the difference.
+* Mean Squared Error (MSE): calculates the average of the squared differences between the predicted values and the true values.
+* Root Mean Squared Error (RMSE): is the square root of the MSE and provides a measure of the average magnitude of the errors.
+
+The following applies to all errors: Lower values of all errors indicate a better model performance. The lower the values, the more accurate the model's predictions are on average.
+
+All these different error calculations show, that 
+
 
 ## Results
 
