@@ -72,7 +72,7 @@ The random forest model is created using the `randomForest()` function with 700 
 
 ### Visualisation
 The two data frames from both predictions will be combined into one. We generate a `geom_bar` plot to visualise the comparison between true and the two estimated AGB values.
-The resulting plot shows a comparison between them for different samples - represented by short names - in alphabetical order. **Figure 4** and **Figure 5** show that for both, Sentinel and drone image, the values for the predicted AGB with the linear model seem to be closer to the true AGB values. 
+The resulting plot shows a comparison between them for different samples - represented by short names - in alphabetical order. **Figure 4** and **figure 5** show that for both, Sentinel and drone image, the values for the predicted AGB with the linear model seem to be closer to the true AGB values. 
 
 ![agb_combined_sat](https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/agb_combined_sat.jpeg)
 
@@ -108,7 +108,7 @@ The results show, that for the Sentinel image, both the linear model and the ran
 Based on these results, the linear model consistently performs better compared to the random forest model, which indicates that the linear model might be more robust across different imaging sources. However, the accuracies could be better, although it seemed from the plot, that the models predicted the AGB quite well. The accuracies could be improved by e.g. generating additional samples. 
 
 ### Visualisation of AGB estimation for entire study area
-The AGB can also be estimated for the entire study area, our two fields. It will be calculated and shown exemplarily for the Sentinel-2 image using the linear model. For this we will extract the NDVI values for the entire **aoi**, not just for the sample points, and make new predictions with these values as newdata. We can then convert the previously created **ndvi_raster** to a data frame and add the predictions as a new column, that we can then plot.
+The AGB can also be estimated for the entire study area, our two fields. It will be calculated and shown exemplarily for the Sentinel-2 image using the linear model. For this we will extract the NDVI values for the entire **aoi**, not just for the sample points, and make new predictions with these values as newdata. We can then convert the previously created **ndvi_raster** to a data frame and add the predictions as a new column, that we can then plot (see **figure 6**).
 
 ![agb_aoi_sat](https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/agb_aoi_sat.jpeg)
 
