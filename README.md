@@ -42,6 +42,9 @@ In the beginning, the required data (aoi, samples with ground truth information 
 #### Calculate NDVI and create buffer
 A common practice in remote sensing to estimate the AGB is using a Sentinel-2 (or drone raster) derived vegetation index, the NDVI, as a predictor. Therefore, we need to calculate this index and convert it to a raster layer. Then, a 10 m buffer around the sample points will be created in order to extract later the mean values of the pixels.
 
+#### Zonal statistics
+Each vegetation index band will be read as as an numerical raster array in order to perform later zonal statistics of selected pixels
+and we combine through a new column with our ground truth AGB values from the 'samples' data frame
 
 In this exercise we will investigate the relation of vegetation indices to above-ground biomass values over study area. We will perform multi-linear and random forest machine learning regression models in order to predict the AGB values based on vegetation indices as predictors.
 
