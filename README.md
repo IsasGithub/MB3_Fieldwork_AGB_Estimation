@@ -19,6 +19,7 @@ The observed fields belong to Demmin, a town in northern Germany (Western-Pomera
   * 02.06.2023 
 * Drone imagery:
   * 30.05.2023 - 01.06.2023
+  * Only available for ESU 2 in Field 2
   * M600 Mica Sense Dual System
   * Since the drone images are too large, please download them from my google drive folder and save them in your data folder: https://drive.google.com/drive/folders/1fvr-hXuy83VxH4pg9DGirB_3QvS9eb1D?usp=sharing
 
