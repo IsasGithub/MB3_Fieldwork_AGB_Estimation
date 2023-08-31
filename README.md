@@ -29,7 +29,7 @@ The observed fields belong to Demmin, a town in northern Germany (Western-Pomera
 * Create a new csv-table with only the relevant in-situ measurements (only the weights of the sample-plants from the laboratory) and add this ground truth information to the shapefile with the point location and names, the SSUs. 
 * Since we only weighted the bowl, the wet and later, after 24 hours in the dry oven, the dry plants in the bowl, we need to subtract the weight of the bowl off the weight of the wet weights in order to get the AGB information. This is done in the field calculator by creating a new column “AGB”. 
 * Drone preprocessing: reprojecting the orthomosaiks.
-* Those can then be imported in R studio.
+* Those can then be imported to R studio.
 
 
 
