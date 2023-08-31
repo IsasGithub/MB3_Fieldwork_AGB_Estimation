@@ -62,13 +62,20 @@ We will now perform linear and random forest machine learning regression models 
 
 The linear model is created using the `lm()` function. It models the relationship between the target variable AGB and the predictor NDVI_mean using the training data. Predictions are made by using the `predict()` function on the model, providing the testing data as newdata. The results of the prediction are the estimated AGB values based on the linear model. We will then convert it into a data frame containing the columns: **true_AGB** (actual AGB values from the testing data), and **estim_AGB** (predicted AGB values from the linear regression model). 
 
-
-
+In order to visualise the predictions properly, we reshape the predicitons data frame from a wide format to a long format using the `pivot_longer()` function.
 
 #### Random forest
 
-with 700 trees to grow
+The random forest model is created using the `randomForest()` function with 700 trees to grow. We do the same steps as for the prediction with the linear model.
 
+
+### Visualisation
+The two data frames from both predictions will be combined into one. We generate a bar plot to visualise the comparison between true and the two estimated AGB values:
+The resulting plot shows a comparison between them for different samples (represented by short names). **Figure 4** shows that for the Sentinel image, the values for the predicted AGB with the ... model are close to the true AGB values. 
+
+
+
+However, this presumption should be supported by... 
 
 ## Results
 
