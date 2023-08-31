@@ -33,7 +33,7 @@ The observed fields belong to Demmin, a town in northern Germany (Western-Pomera
 * Drone preprocessing: reprojecting the orthomosaiks.
 * Those can then be imported to R studio.
 
-### R 
+### Preprocessing in R
 The following is performed for both satellite and drone imagery. You can find the commented scripts in this repository.
 
 #### Load data
@@ -51,6 +51,9 @@ For this buffered points we extract the mean NDVI from the newly created ndvi_ra
 
 ***Figure 3:** Linear relationship between NDVI and AGB values for Sentinel and drone images.* 
 
+### AGB estimatiom
+#### Dividing data set in training & testing
+Splitting the dataset into training and testing subsets helps ensure the model's performance on new data. The training set is used to train the model. The model learns the relationships between the predictor (NDVI) and the target (AGB) variables. The testing set is used to evaluate the model's performance on new, unseen data. This helps assess how well the model generalises to data it hasn't seen during training. 70% of the SSU points (with ground truth and NDVI values) are randomly selected for training, and the remaining 30% are assigned to testing.
 
 
 In this exercise we will investigate the relation of vegetation indices to above-ground biomass values over study area. We will perform multi-linear and random forest machine learning regression models in order to predict the AGB values based on vegetation indices as predictors.
