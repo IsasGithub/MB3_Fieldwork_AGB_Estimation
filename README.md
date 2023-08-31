@@ -134,5 +134,10 @@ Based on the these results, the linear model consistently performs better compar
 ### Visualisation of AGB estimation for entire study area
 The AGB can also be estimated for the entire study area, our two field. It will be calculated and shown exemplarily for the Sentinel-2 image using the linear model. For this we will extract the NDVI values for the entire **aoi**, not just for the sample points, and make new predictions with these values as newdata. We can then convert the previously created **ndvi_raster** to a data frame and add the predictions as a new column, that we can then plot.
 
+![agb_aoi_sat](https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/agb_aoi_sat.jpeg)
+
+***Figure 6:** Estimated AGB for entire study area.* 
+
+
 ## Conclusion
 The field trip gave a good insight into common agricultural field work. We learned about the "Demmin" project in general and about the measurements needed for it. Since, at least most of us, had very little experience with fieldwork, it was very exciting for us to explore how all these measurements work and to get outside, away from the computer, to get the data we need for our analysis ourselves. The analysis of this project has demonstrated the building of two different models to estimate AGB of winter wheat using additional Sentinel-2 and drone data, which can now be applied to similar locations or different dates.
