@@ -23,7 +23,7 @@ The observed fields belong to Demmin, a town in northern Germany (Western-Pomera
   * M600 Mica Sense Dual System
   * Since the drone images are too large, please download them from my google drive folder and save them in your data folder: https://drive.google.com/drive/folders/1fvr-hXuy83VxH4pg9DGirB_3QvS9eb1D?usp=sharing
 
-## Methodology 
+## Methodology & Results
 ![Workflow](https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/workflow.png)
 ***Figure 2:** Simplified workflow.* 
 
@@ -82,18 +82,57 @@ The resulting plot shows a comparison between them for different samples (repres
 
 ***Figure 5:** Visualisation of true and estimated AGB (drone).* 
 
-
-This assumption should be substantiated by calculating different evaluation errors. There are three, which are commonly used. 
+### Error metrics
+This assumption should be substantiated by calculating different evaluation errors to assess the model's accuracy. There are three, which are commonly used. 
 * The Mean Absolute Error (MAE): measures the average absolute difference between the predicted values and the true values gives an idea of the average magnitude of the difference.
 * Mean Squared Error (MSE): calculates the average of the squared differences between the predicted values and the true values.
 * Root Mean Squared Error (RMSE): is the square root of the MSE and provides a measure of the average magnitude of the errors.
 
-The following applies to all errors: Lower values of all errors indicate a better model performance. The lower the values, the more accurate the model's predictions are on average.
+The following applies to all errors: Lower values of all errors indicate a better model performance. The lower the values, the more accurate the model's predictions are on average. The benchmark for considering the result good can be based on the range of your actual AGB values. 
 
-All these different error calculations show, that 
+Sentinel Image Results:
+
+    Linear Model:
+        MAE: 6.918877
+        MSE: 72.53601
+        RMSE: 8.516807
+
+    Random Forest Model:
+        MAE: 6.571995
+        MSE: 70.91848
+        RMSE: 8.421311
 
 
-## Results
+Drone 1 Image Results:
+
+    Linear Model:
+        MAE: 5.145503
+        MSE: 31.30135
+        RMSE: 5.594761
+
+    Random Forest Model:
+        MAE: 7.097156
+        MSE: 62.1553
+        RMSE: 7.883863
+
+
+Drone 2 Image Results:
+
+    Linear Model:
+        MAE: 7.559921
+        MSE: 82.64145
+        RMSE: 9.090734
+
+    Random Forest Model:
+        MAE: 7.495691
+        MSE: 81.02835
+        RMSE: 9.001575
+
+The results show, that for the Sentinel image, both the linear model and the random forest model are performing fairly similarly. The models seem to have moderate accuracy. Comparing these results to the results of the first drone image, the linear model's performance on drone 1 data is better. The random forest model, however, seems to perform worse. Similar to the first drone image, the linear model's performance on the second drone image is better than that of the random forest model. Compared to the Sentinel image, both models seem to have slightly higher errors. Nonetheless, we should keep in mind while comparing them, that spatial extend of the images are not similar, which makes it difficult to compare.
+Based on the these results, the linear model consistently performs better compared to the random forest model, which indicates that the linear model might be more robust across different imaging sources. However, the accuracies could be better, although it seemed from the plot, that the models predicted the AGB quite well. The accuracies could be improved by e.g. generating additional samples. 
+
+### Visualisation of AGB estimation for entire study area
+The AGB can also be estimated for the entire study area, our two field. It can be calculated and shown exemplarily for the Sentinel-2 image using the linear model. 
 
 ## Conclusion
 The field trip gave a good insight into common agricultural field work. We learned about the "Demmin" project in general and about the measurements needed for it. Since, at least most of us, had very little experience with fieldwork, it was very exciting for us to explore how all these measurements work and to get outside, away from the computer, to get the data we need for our analysis ourselves. The analysis of this project has demonstrated the building of two different models to estimate AGB of winter wheat using additional Sentinel-2 and drone data, which can now be applied to similar locations or different dates.
