@@ -14,7 +14,12 @@ The observed fields belong to Demmin, a town in northern Germany (Western-Pomera
 ## Data
 * In-situ measurements:
   * 30.05.2023 - 01.06.2023
-
+* Sentinel-2 image:
+  * 02.06.2023 
+* Drone imagery:
+  * 30.05.2023 - 01.06.2023
+  * M600 Mica Sense Dual System
+  * Since the drone images are too large, please download them from my google drive folder: https://drive.google.com/drive/folders/1fvr-hXuy83VxH4pg9DGirB_3QvS9eb1D?usp=sharing
 
 ***Table 1** Sentinel-2A scenes downloaded from the ESA Copernicus Open Access Hub and used for the land cover change analysis.*
 | Image Nr. | Acquisition Date | Processing Level | Image ID                                                     |
