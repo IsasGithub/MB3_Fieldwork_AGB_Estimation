@@ -34,6 +34,14 @@ The observed fields belong to Demmin, a town in northern Germany (Western-Pomera
 * Drone preprocessing: reprojecting the orthomosaiks.
 * Those can then be imported to R studio.
 
+### R 
+The following is performed for both satellite and drone imagery in order to draw a comparison at the end.
+
+In the beginning, the required data (aoi, samples with ground truth information and raster image) are imported into the script, and the raster is masked to the area of interest, our fields.
+
+
+
+
 
 ## Results
 
