@@ -5,7 +5,6 @@ To monitor and analyse crop over time, each year, some students from the EAGLE p
 
 ## Aim
 This project aims to estimate the above ground biomass in two winter wheat fields using the in-situ data to train a model and additional Sentinel-2 and drone imagery. For both estimations, two models are created and trained (linear model and random forest).  The results of the estimation will be compared based on their model’s performance. The analysis is done in R with preprocessing in QGIS.
-You can find the commented scripts in this repository.
 
 ## Study Area
 ![StudyArea](https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/StudyArea.PNG)
@@ -35,12 +34,17 @@ The observed fields belong to Demmin, a town in northern Germany (Western-Pomera
 * Those can then be imported to R studio.
 
 ### R 
-The following is performed for both satellite and drone imagery in order to draw a comparison at the end.
+The following is performed for both satellite and drone imagery. You can find the commented scripts in this repository.
 
 In the beginning, the required data (aoi, samples with ground truth information and raster image) are imported into the script, and the raster is masked to the area of interest, our fields.
 
 
+A common practice in remote sensing to estimate the AGB is using a Sentinel-2 (or drone raster) derived vegetation index, the NDVI, as a predictor. Therefore, we need to calculate this index and convert it to a raster layer. 
 
+Then, a 10 m buffer around the sample points will be created in order to extract later the mean values of pixels.
+
+
+In this exercise we will investigate the relation of vegetation indices to above-ground biomass values over study area. We will perform multi-linear and random forest machine learning regression models in order to predict the AGB values based on vegetation indices as predictors.
 
 
 ## Results
