@@ -44,7 +44,7 @@ In the beginning, the required data (aoi, samples with ground truth information 
 A common practice in remote sensing to estimate the AGB is using a Sentinel-2 (or drone raster) derived vegetation index, the NDVI, as a predictor. Therefore, we need to calculate this index and convert it to a raster layer. Then, a 10 m buffer around the sample points will be created in order to extract later the mean values of the pixels.
 
 #### Zonal statistics
-For this buffered points we extract the mean NDVI from the newly created ndvi_raster, which we combine through a adding it as a new column with our ground truth AGB values from the `samples` data frame. Now we can plot the linear relationship in a scatterplot style between the ndvi values and AGB values. It can be seen, that there is a (slight) relationship between them. It is especially visible in the Sentinel plot, because it has more samples and therefore, it is easier to identify a relation.
+In this part, we investigate the relation of the vegetation index to above-ground biomass values over the study area. For this buffered points we extract the mean NDVI from the newly created ndvi_raster, which we combine through a adding it as a new column with our ground truth AGB values from the `samples` data frame. Now we can plot the linear relationship in a scatterplot style between the ndvi values and AGB values. It can be seen, that there is a (slight) relationship between them. It is especially visible in the Sentinel plot, because it has more samples and therefore, it is easier to identify a relation.
 
 | <img src="https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/scatterplot_sat.jpeg" alt="scatterplot_sat" width="300"/> | <img src="https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/scatterplot_dr1.jpeg" alt="scatterplot_dr1" width="300"/> |<img src="https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/scatterplot_dr2.jpeg" alt="scatterplot_dr2" width="300"/> |
 | -- | --- | --- |
@@ -56,8 +56,7 @@ For this buffered points we extract the mean NDVI from the newly created ndvi_ra
 #### Dividing data set in training & testing
 Splitting the dataset into training and testing subsets helps ensure the model's performance on new data. The training set is used to train the model. The model learns the relationships between the predictor (NDVI) and the target (AGB) variables. The testing set is used to evaluate the model's performance on new, unseen data. This helps assess how well the model generalises to data it hasn't seen during training. 70% of the SSU points (with ground truth and NDVI values) are randomly selected for training, and the remaining 30% are assigned to testing.
 
-
-In this exercise we will investigate the relation of vegetation indices to above-ground biomass values over study area. We will perform multi-linear and random forest machine learning regression models in order to predict the AGB values based on vegetation indices as predictors.
+We will now perform linear and random forest machine learning regression models in order to predict the AGB values based on the NDVI as a predictor.
 
 
 ## Results
