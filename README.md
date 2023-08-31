@@ -90,6 +90,18 @@ This assumption should be substantiated by calculating different evaluation erro
 
 The following applies to all errors: Lower values of all errors indicate a better model performance. The lower the values, the more accurate the model's predictions are on average. The benchmark for considering the result good can be based on the range of your actual AGB values. 
 
+
+***Table 1:** Error metrics for linear and random forest model for Sentinel and drone images.*
+| Image Nr.    | Sentinel                     | 1. Drone                     | 2. Drone                     |
+| ------------ | ---------------------------- | ---------------------------- | ---------------------------- |
+| Error metric | Linear Model | Random Forest | Linear Model | Random Forest | Linear Model | Random Forest |                                                     |
+| ------------ | ------------ | ------------- | ------------ | ------------- | ------------ | ------------- |   
+| MAE          | 2019-10-27   | MSIL2A        | 2019-10-27   | MSIL2A        | 2019-10-27   | MSIL2A        |
+| MSE          | 2022-12-20   | MSIL2A        | 2019-10-27   | MSIL2A        | 2019-10-27   | MSIL2A        |
+| RMSE         | 2022-12-20   | MSIL2A        | 2019-10-27   | MSIL2A        | 2019-10-27   | MSIL2A        | 
+
+
+
 Sentinel Image Results:
 
     Linear Model:
