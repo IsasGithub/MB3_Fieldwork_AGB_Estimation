@@ -8,7 +8,7 @@ This project aims to estimate the above ground biomass in two winter wheat field
 You can find the commented scripts in this repository.
 
 ## Study Area
-![Overview](qgis/overview.png)
+![StudyArea](figs/StudyArea.png)
 The observed fields belong to Demmin, a town in northern Germany (Western-Pomerania), where they grow winter wheat at that time of year. Each field consists of 6 ESUs with each 9 SSUs. The arrangement of these is analogous to the Sentinel and Landsat grid (10m und 30m). For this project, however, we will only use the ESUs 1 & 2 of each field.
 
 ***Table 1** Sentinel-2A scenes downloaded from the ESA Copernicus Open Access Hub and used for the land cover change analysis.*
