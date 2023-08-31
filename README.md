@@ -46,7 +46,7 @@ A common practice in remote sensing to estimate the AGB is using a Sentinel-2 (o
 For this buffered points we extract the mean NDVI from the newly created ndvi_raster, which we combine through a adding it as a new column with our ground truth AGB values from the `samples` data frame. Now we can plot the linear relationship in a scatterplot style between the ndvi values and AGB values.
 
 
-| <img src="https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/scatterplot_sat.jpeg" alt="scatterplot_sat" width="250"/> | <img src="https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/scatterplot_dr1.jpeg" alt="scatterplot_dr1" width="250"/> |<img src="https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/scatterplot_dr2.jpeg" alt="scatterplot_dr2" width="250"/> |
+| <img src="https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/scatterplot_sat.jpeg" alt="scatterplot_sat" width="300"/> | <img src="https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/scatterplot_dr1.jpeg" alt="scatterplot_dr1" width="300"/> |<img src="https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/scatterplot_dr2.jpeg" alt="scatterplot_dr2" width="300"/> |
 | -- | --- | --- |
 | Linear Relationship Sentinel | Linear Relationship Drone 1 | Linear Relationship Drone 2 |
 
