@@ -92,53 +92,16 @@ The following applies to all errors: Lower values of all errors indicate a bette
 
 
 ***Table 1:** Error metrics for linear and random forest model for Sentinel and drone images.*
-| Image Nr.    | Sentinel                     | 1. Drone                     | 2. Drone                     |
-| ------------ | ---------------------------- | ---------------------------- | ---------------------------- |
-| Error metric | Linear Model | Random Forest | Linear Model | Random Forest | Linear Model | Random Forest |                                                     |
-| ------------ | ------------ | ------------- | ------------ | ------------- | ------------ | ------------- |   
-| MAE          | 2019-10-27   | MSIL2A        | 2019-10-27   | MSIL2A        | 2019-10-27   | MSIL2A        |
-| MSE          | 2022-12-20   | MSIL2A        | 2019-10-27   | MSIL2A        | 2019-10-27   | MSIL2A        |
-| RMSE         | 2022-12-20   | MSIL2A        | 2019-10-27   | MSIL2A        | 2019-10-27   | MSIL2A        | 
 
+| Error metric | Sentinel       | Drone 1          | Drone 2           |
+| ------------ | -------------- | ---------------- | ----------------- |
+| MAE_lm       | 6.918877       | 5.145503         | 7.559921          |
+| MSE_lm       | 72.53601       | 31.30135         | 82.64145          |
+| RMSE_lm      | 8.516807       | 5.594761         | 9.090734          |
+| MAE_rf       | 6.571995       | 7.097156         | 7.495691          |
+| MSE_rf       | 70.91848       | 62.1553          | 81.02835          |
+| RMSE_rf      | 8.421311       | 7.883863         | 9.001575          |
 
-
-Sentinel Image Results:
-
-    Linear Model:
-        MAE: 6.918877
-        MSE: 72.53601
-        RMSE: 8.516807
-
-    Random Forest Model:
-        MAE: 6.571995
-        MSE: 70.91848
-        RMSE: 8.421311
-
-
-Drone 1 Image Results:
-
-    Linear Model:
-        MAE: 5.145503
-        MSE: 31.30135
-        RMSE: 5.594761
-
-    Random Forest Model:
-        MAE: 7.097156
-        MSE: 62.1553
-        RMSE: 7.883863
-
-
-Drone 2 Image Results:
-
-    Linear Model:
-        MAE: 7.559921
-        MSE: 82.64145
-        RMSE: 9.090734
-
-    Random Forest Model:
-        MAE: 7.495691
-        MSE: 81.02835
-        RMSE: 9.001575
 
 The results show, that for the Sentinel image, both the linear model and the random forest model are performing fairly similarly. The models seem to have moderate accuracy. Comparing these results to the results of the first drone image, the linear model's performance on drone 1 data is better. The random forest model, however, seems to perform worse. Similar to the first drone image, the linear model's performance on the second drone image is better than that of the random forest model. Compared to the Sentinel image, both models seem to have slightly higher errors. Nonetheless, we should keep in mind while comparing them, that spatial extend of the images are not similar, which makes it difficult to compare.
 Based on the these results, the linear model consistently performs better compared to the random forest model, which indicates that the linear model might be more robust across different imaging sources. However, the accuracies could be better, although it seemed from the plot, that the models predicted the AGB quite well. The accuracies could be improved by e.g. generating additional samples. 
