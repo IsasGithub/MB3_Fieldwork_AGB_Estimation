@@ -85,7 +85,7 @@ The resulting plot shows a comparison between them for different samples - repre
 
 ### Error metrics
 This assumption should be substantiated by calculating different error metrics to assess the model's accuracy. There are three, which are commonly used:
-* The Mean Absolute Error (MAE): measures the average absolute difference between the predicted values and the true values gives an idea of the average magnitude of the difference.
+* The Mean Absolute Error (MAE): measures the average absolute difference between the predicted values and the true values and gives an idea of the average magnitude of the difference.
 * Mean Squared Error (MSE): calculates the average of the squared differences between the predicted values and the true values.
 * Root Mean Squared Error (RMSE): is the square root of the MSE and provides a measure of the average magnitude of the errors.
 
