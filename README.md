@@ -72,7 +72,7 @@ The random forest model is created using the `randomForest()` function with 700 
 
 ### Visualisation
 The two data frames from both predictions will be combined into one. We generate a `geom_bar` plot to visualise the comparison between true and the two estimated AGB values.
-The resulting plot shows a comparison between them for different samples (represented by short names) in alphabetical order. **Figure 4** and **Figure 5** show that for both, Sentinel and drone image, the values for the predicted AGB with the linear model seem to be closer to the true AGB values. 
+The resulting plot shows a comparison between them for different samples - represented by short names - in alphabetical order. **Figure 4** and **Figure 5** show that for both, Sentinel and drone image, the values for the predicted AGB with the linear model seem to be closer to the true AGB values. 
 
 ![agb_combined_sat](https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/agb_combined_sat.jpeg)
 
