@@ -16,7 +16,8 @@ The observed fields belong to Demmin, a town in northern Germany (Western-Pomera
 * In-situ measurements:
   * 30.05.2023 - 01.06.2023
 * Sentinel-2 image:
-  * 02.06.2023 
+  * 02.06.2023
+  * https://scihub.copernicus.eu/
 * Drone imagery:
   * 30.05.2023 - 01.06.2023
   * Only available for ESU 2 in Field 2
