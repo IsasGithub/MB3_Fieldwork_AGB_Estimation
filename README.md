@@ -53,7 +53,7 @@ In this part, we investigate the relation of the vegetation index to above-groun
 ***Figure 3:** Linear relationship between NDVI and AGB values for Sentinel and drone images.* 
 
 ### AGB estimatiom
-#### Dividing data set in training & testing
+#### Dividing data set into training & testing
 Splitting the dataset into training and testing subsets helps ensure the model's performance on new data. The training set is used to train the model. The model learns the relationships between the predictor (NDVI) and the target (AGB) variables. The testing set is used to evaluate the model's performance on new, unseen data. This helps assess how well the model generalises to data it hasn't seen during training. 70% of the SSU points (with ground truth and NDVI values) are randomly selected for training, and the remaining 30% are assigned to testing.
 
 We will now perform linear and random forest machine learning regression models in order to predict the AGB values based on the NDVI as a predictor.
