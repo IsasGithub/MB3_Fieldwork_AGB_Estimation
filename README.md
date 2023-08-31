@@ -10,7 +10,7 @@ This project aims to estimate the above ground biomass in two winter wheat field
 ![StudyArea](https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/StudyArea.PNG)
 ***Figure 1:** Study area with fields and SSUs.* 
 
-The observed fields belong to Demmin, a town in northern Germany (Western-Pomerania), where they grow winter wheat at that time of year. Each field consists of 6 ESUs with each 9 SSUs. The arrangement of these is analogous to the Sentinel and Landsat grid (10m und 30m). For this project, however, we will only use the ESUs 1 & 2 of each field.
+The observed fields belong to Demmin, a town in northern Germany (Western-Pomerania), where they grow winter wheat at that time of year. Each field consists of 6 ESUs with each 9 SSUs. The arrangement of these is analogous to the Sentinel and Landsat grid (10m and 30m). For this project, however, we will only use the ESUs 1 & 2 of each field.
 
 ## Data
 * In-situ measurements:
