@@ -116,4 +116,5 @@ The AGB can also be estimated for the entire study area, our two fields. It will
 
 
 ## Conclusion
-The field trip gave a good insight into common agricultural field work. We learned about the "Demmin" project in general and about the measurements needed for it. Since, at least most of us, had very little experience with fieldwork, it was very exciting for us to explore how all these measurements work and to get outside, away from the computer, to get the data we need for our analysis ourselves. The analysis of this project has demonstrated the building of two different models to estimate AGB of winter wheat using additional Sentinel-2 and drone data, which can now be applied to similar locations or different dates.
+The field trip gave a good insight into common agricultural field work. We learned about the "Demmin" project in general and about the measurements needed for it. Since, at least most of us, had very little experience with fieldwork, it was very exciting for us to explore how all these measurements work and to get outside, away from the computer, to get the data we need for our analysis ourselves.
+The analysis of this project has demonstrated the building of two different models to estimate the AGB of winter wheat using additional Sentinel-2 and drone data, which can now be applied to similar locations or different dates.
