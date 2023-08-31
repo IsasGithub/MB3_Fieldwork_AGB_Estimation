@@ -43,8 +43,13 @@ In the beginning, the required data (aoi, samples with ground truth information 
 A common practice in remote sensing to estimate the AGB is using a Sentinel-2 (or drone raster) derived vegetation index, the NDVI, as a predictor. Therefore, we need to calculate this index and convert it to a raster layer. Then, a 10 m buffer around the sample points will be created in order to extract later the mean values of the pixels.
 
 #### Zonal statistics
-Each vegetation index band will be read as as an numerical raster array in order to perform later zonal statistics of selected pixels
-and we combine through a new column with our ground truth AGB values from the `samples` data frame
+For this buffered points we extract the mean NDVI from the newly created ndvi_raster, which we combine through a adding it as a new column with our ground truth AGB values from the `samples` data frame. Now we can plot the linear relationship in a scatterplot style between the ndvi values and AGB values.
+
+
+| <img src="https://github.com/lenajaeger9/DigitalImageAnalysis_FinalTask/blob/main/figures/glacier_mask2000.png" alt="Glacier mask 2000" width="400"/> | <img src="https://github.com/lenajaeger9/DigitalImageAnalysis_FinalTask/blob/main/figures/glacier_mask2019.png" alt="Glacier mask 2019" width="400"/> |
+| -- | --- |
+| Glacier mask 2000 | Glacier mask 2019 |
+
 
 In this exercise we will investigate the relation of vegetation indices to above-ground biomass values over study area. We will perform multi-linear and random forest machine learning regression models in order to predict the AGB values based on vegetation indices as predictors.
 
