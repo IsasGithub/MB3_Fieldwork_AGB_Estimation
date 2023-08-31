@@ -24,6 +24,9 @@ The observed fields belong to Demmin, a town in northern Germany (Western-Pomera
   * Since the drone images are too large, please download them from my google drive folder and save them in your data folder: https://drive.google.com/drive/folders/1fvr-hXuy83VxH4pg9DGirB_3QvS9eb1D?usp=sharing
 
 ## Methodology & Results
+![StudyArea](https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/StudyArea.PNG)
+***Figure 1:** Study area with fields and SSUs.* 
+
 ### Data preprocessing in QGIS
 * Create area of interest which contains both fields that we want to observe based on the satellite image of that point of time.
 * Create a new csv-table with only the relevant in-situ measurements (only the weights of the sample-plants from the laboratory) and add this ground truth information to the shapefile with the point location and names, the SSUs. 
