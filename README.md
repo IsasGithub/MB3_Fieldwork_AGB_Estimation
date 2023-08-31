@@ -44,7 +44,7 @@ In the beginning, the required data (aoi, samples with ground truth information 
 A common practice in remote sensing to estimate the AGB is using a Sentinel-2 (or drone raster) derived vegetation index, the NDVI, as a predictor. Therefore, we need to calculate this index and convert it to a raster layer. Then, a 10 m buffer around the sample points will be created in order to extract later the mean values of the pixels.
 
 #### Zonal statistics
-In this part, we investigate the relation of the vegetation index to above-ground biomass values over the study area. For this buffered points we extract the mean NDVI from the newly created ndvi_raster, which we combine through a adding it as a new column with our ground truth AGB values from the `samples` data frame. Now we can plot the linear relationship in a scatterplot style between the ndvi values and AGB values. It can be seen, that there is a (slight) relationship between them. It is especially visible in the Sentinel plot, because it has more samples and therefore, it is easier to identify a relation.
+In this part, we investigate the relation of the vegetation index to above-ground biomass values over the study area. For this buffered points we extract the mean NDVI from the newly created ndvi_raster, which we combine through a adding it as a new column with our ground truth AGB values from the **samples** data frame. Now we can plot the linear relationship in a scatterplot style between the ndvi values and AGB values. It can be seen, that there is a (slight) relationship between them. It is especially visible in the Sentinel plot, because it has more samples and therefore, it is easier to identify a relation.
 
 | <img src="https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/scatterplot_sat.jpeg" alt="scatterplot_sat" width="300"/> | <img src="https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/scatterplot_dr1.jpeg" alt="scatterplot_dr1" width="300"/> |<img src="https://github.com/IsasGithub/MB3_Fieldwork_AGB_Estimation/blob/main/figs/scatterplot_dr2.jpeg" alt="scatterplot_dr2" width="300"/> |
 | -- | --- | --- |
@@ -60,7 +60,7 @@ We will now perform linear and random forest machine learning regression models 
 
 #### Linear model
 
-The linear model is created using the `lm()` function. It models the relationship between the target variable AGB and the predictor NDVI_mean using the training data. Predictions are made by using the `predict()` function on the model, providing the testing data as newdata. The results of the prediction are the estimated AGB values based on the linear model. We will then convert it into a data frame containing the columns: true_AGB (actual AGB values from the testing data), and estim_AGB (predicted AGB values from the linear regression model). 
+The linear model is created using the `lm()` function. It models the relationship between the target variable AGB and the predictor NDVI_mean using the training data. Predictions are made by using the `predict()` function on the model, providing the testing data as newdata. The results of the prediction are the estimated AGB values based on the linear model. We will then convert it into a data frame containing the columns: **true_AGB** (actual AGB values from the testing data), and **estim_AGB** (predicted AGB values from the linear regression model). 
 
 
 
